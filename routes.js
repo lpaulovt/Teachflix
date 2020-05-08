@@ -13,4 +13,11 @@ routes.get('/students', function(req, res){
     res.render('students')
 })
 
+routes.get('/teachers/create', function(req, res){
+    res.render('teachers/create')
+})
+
+routes.post('/teachers', function(req, res){
+    return res.send("Formulário recebido!")
+})
 module.exports = routes

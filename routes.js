@@ -18,6 +18,6 @@ routes.get('/teachers/create', function(req, res){
 })
 
 routes.post('/teachers', function(req, res){
-    return res.send("Formulário recebido!")
+    return res.send(req.body)
 })
 module.exports = routes

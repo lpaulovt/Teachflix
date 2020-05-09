@@ -10,10 +10,22 @@ exports.post = function(req, res){
         }
     }
 
-    req.body.created_at = Date.now();
-    req.body.birth = Date.parse(req.body.birth)
+    let {avatar_url, name, birth, escolaridade, classes, area} = req.body
 
-    data.instructors.push(req.body)
+    const id = Number(data.instructors.length + 1)
+    const created_at = Date.now();
+    birth = Date.parse(birth)
+
+    data.instructors.push({
+        id,
+        avatar_url,
+        name,
+        birth,
+        escolaridade,
+        classes,
+        area,
+        created_at
+    })
 
 
     fs.writeFile('data.json', JSON.stringify(data, null, 4), function(err){

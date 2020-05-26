@@ -19,7 +19,7 @@ exports.post = function(req, res){
     const created_at = Date.now();
     birth = Date.parse(birth)
 
-    data.instructors.push({
+    data.teachers.push({
         id,
         avatar_url,
         name,
@@ -50,5 +50,13 @@ exports.show = function(req, res){
 
     if (!foundTeacher) return res.send("Teacher not found!") 
 
-    return res.render('teachers/show', {teacher: foundTeacher})
+    const teacher = {
+        ...foundTeacher,
+        age:"",
+        gender:"",
+        area: foundTeacher.area.split(","),
+        created_at:""
+    }
+
+    return res.render('teachers/show', {teacher})
 }

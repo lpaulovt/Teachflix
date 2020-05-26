@@ -15,7 +15,7 @@ exports.post = function(req, res){
 
     let {avatar_url, name, birth, escolaridade, classes, area} = req.body
 
-    const id = Number(data.instructors.length + 1)
+    const id = Number(data.teachers.length + 1)
     const created_at = Date.now();
     birth = Date.parse(birth)
 
@@ -53,7 +53,6 @@ exports.show = function(req, res){
     const teacher = {
         ...foundTeacher,
         age:"",
-        gender:"",
         area: foundTeacher.area.split(","),
         created_at:""
     }

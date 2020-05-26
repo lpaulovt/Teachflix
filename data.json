@@ -19,6 +19,16 @@
             "classes": "Presencial",
             "area": "Desenvolvimento web",
             "created_at": 1588988774781
+        },
+        {
+            "id": 3,
+            "avatar_url": "https://google.com",
+            "name": "Julia",
+            "birth": 691200000000,
+            "escolaridade": "D",
+            "classes": "P",
+            "area": "Web, Design, Front-end",
+            "created_at": 1590531855935
         }
     ]
 }

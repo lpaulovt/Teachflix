@@ -6,7 +6,7 @@
             "name": "Felipe",
             "birth": 813283200000,
             "escolaridade": "Mestrado",
-            "classes": "Presencial",
+            "classes": "P",
             "area": "Banco de dados, Desenvolvimento Web",
             "created_at": 1588988241867
         },
@@ -16,7 +16,7 @@
             "name": "Patrick",
             "birth": 637459200000,
             "escolaridade": "Doutorado",
-            "classes": "Presencial",
+            "classes": "P",
             "area": "Desenvolvimento web",
             "created_at": 1588988774781
         },
@@ -29,6 +29,16 @@
             "classes": "P",
             "area": "Web, Design, Front-end",
             "created_at": 1590531855935
+        },
+        {
+            "id": 4,
+            "avatar_url": "https://google.com",
+            "name": "Joao",
+            "birth": 502588800000,
+            "escolaridade": "D",
+            "classes": "EAD",
+            "area": "Back-end, web",
+            "created_at": 1590531953489
         }
     ]
 }

@@ -49,4 +49,6 @@ exports.show = function(req, res){
     })
 
     if (!foundTeacher) return res.send("Teacher not found!") 
+
+    return res.render('teachers/show', {teacher: foundTeacher})
 }

@@ -12,5 +12,14 @@ module.exports = {
         }
 
         return age
+    },
+    graduation: function(grau) {
+        switch(grau) {
+            case('1'):  return 'medio'
+            case('2'): return 'superior'
+            case('3'): return 'mestrado'
+            case('4'): return 'doutorado'
+        }
     }
+
 }

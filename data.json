@@ -5,7 +5,7 @@
             "avatar_url": "https://youtube.com",
             "name": "Felipe",
             "birth": 813283200000,
-            "escolaridade": "Mestrado",
+            "escolaridade": "3",
             "classes": "P",
             "area": "Banco de dados, Desenvolvimento Web",
             "created_at": 1588988241867
@@ -15,7 +15,7 @@
             "avatar_url": "https://google.com",
             "name": "Patrick",
             "birth": 637459200000,
-            "escolaridade": "Doutorado",
+            "escolaridade": "4",
             "classes": "P",
             "area": "Desenvolvimento web",
             "created_at": 1588988774781
@@ -25,7 +25,7 @@
             "avatar_url": "https://google.com",
             "name": "Julia",
             "birth": 691200000000,
-            "escolaridade": "D",
+            "escolaridade": "4",
             "classes": "P",
             "area": "Web, Design, Front-end",
             "created_at": 1590531855935
@@ -35,7 +35,7 @@
             "avatar_url": "https://google.com",
             "name": "Joao",
             "birth": 502588800000,
-            "escolaridade": "D",
+            "escolaridade": "4",
             "classes": "EAD",
             "area": "Back-end, web",
             "created_at": 1590531953489

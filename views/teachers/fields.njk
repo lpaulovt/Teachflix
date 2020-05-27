@@ -19,11 +19,15 @@
             <div class="item">
                 <div>Grau de escolaridade</div>
                 <div>
-                    <select name="escolaridade" id="" >
-                        <option value="EM">Ensino Médio Completo</option>
-                        <option value="ES" >Ensino Superior Completo</option>
-                        <option value="M">Mestrado</option>
-                        <option value="D">Doutorado</option>
+                    <select name="escolaridade" id="" value="">
+                        <option value="1" {% if teacher.escolaridade=='medio' %} selected
+                        {% endif %}>Ensino Médio Completo</option>
+                        <option value="2" {% if teacher.escolaridade=='superior' %} selected
+                        {% endif %} >Ensino Superior Completo</option>
+                        <option value="3" {% if teacher.escolaridade=='mestrado' %} selected
+                        {% endif %}>Mestrado</option>
+                        <option value="4" {% if teacher.escolaridade=='doutorado' %} selected
+                        {% endif %}>Doutorado</option>
                     </select>
                 </div>
             </div>
@@ -42,3 +46,4 @@
                     <input type="text" name="area" id="" placeholder="Digite as matérias entre vírgulas" value="{{teacher.area}}">
                 </div>
             </div>
+            <button type="submit">Salvar</button>

@@ -1,6 +1,7 @@
 const fs = require('fs')
 const data = require('./data.json')
 const {age} = require('./utils')
+const Intl = require('Intl')
 
 //CREATE
 
@@ -54,7 +55,7 @@ exports.show = function(req, res){
         ...foundTeacher,
         age:age(foundTeacher.birth),
         area: foundTeacher.area.split(","),
-        created_at:""
+        created_at: new Intl.DateTimeFormat('pt-Br').format(foundTeacher.created_at)
     }
 
     return res.render('teachers/show', {teacher})

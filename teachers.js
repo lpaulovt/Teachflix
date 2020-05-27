@@ -60,3 +60,5 @@ exports.show = function(req, res){
 
     return res.render('teachers/show', {teacher})
 }
+
+//EDIT

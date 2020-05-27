@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
-
+const {age} = require('./utils')
 
 //CREATE
 
@@ -52,7 +52,7 @@ exports.show = function(req, res){
 
     const teacher = {
         ...foundTeacher,
-        age:"",
+        age:age(foundTeacher.birth),
         area: foundTeacher.area.split(","),
         created_at:""
     }

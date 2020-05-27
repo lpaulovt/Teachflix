@@ -13,6 +13,15 @@ module.exports = {
 
         return age
     },
+    date: function(timestamp){
+        const date = new Date()
+
+        const year = date.getUTCFullYear()
+        const month = date.getUTCMonth() + 1
+        const day = date.getUTCDate();
+
+        return `${year}-${month}-${day}`
+    },
     graduation: function(grau) {
         switch(grau) {
             case('1'):  return 'medio'
